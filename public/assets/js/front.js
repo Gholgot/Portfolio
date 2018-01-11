@@ -1,3 +1,7 @@
+$(document).ready(function() {    
+  UIkit.modal('#start_modal').show();    
+});  
+
 const { styler, decay, listen, pointer, value } = window.popmotion;
 
 const slider = document.querySelector('#skill_container');
