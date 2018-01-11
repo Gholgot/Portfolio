@@ -43,7 +43,6 @@ require('./app/route')(routing);
 app.use('/', routing);  
 
 
-
 //________________ Functions ___________
 
 server.listen(8888, '0.0.0.0', function() {

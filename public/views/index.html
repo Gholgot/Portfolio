@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tony Jacomelli</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/css/uikit.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Beardy Dev</title>
 </head>
+
 <body>
-    
+    <div id="first_parallax" class="uk-height-500 uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200">
+        <div id="first_parallax_content" class="uk-text-center uk-margin-auto uk-margin-auto-vertical uk-width-1-2@m">
+            <img src="/img/logo_noback.png" alt="Logo of my site" srcset="" id="logo">
+            <h1 class="grey_font">Développeur Web Full-Stack</h1>
+            <h3 class="grey_font">Tony Jacomelli</h3>
+        </div>
+    </div>
+
+    <h4>Compétences (Swipe de droite à gauche)</h4>
+    <div id="skill_container">
+        <div class="uk-card uk-card-hover uk-card-secondary uk-card-body cardy">
+            <div class="front">
+                <h4 class="uk-card-title">NodeJS</h4>
+                <img src="/img/nodejs.svg" alt="NodeJS logo" class="tech_logo">
+            </div>
+            <div class="back">
+                <h5>My IRC</h5>
+                <p>
+                    Projet réalisé dans le cadre de ma formation, un chat instantanée ainsi que système de connexion et différents droits sur
+                    les users.
+                </p>
+
+                <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Apperçu</a>
+
+                <div id="modal-full" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                            <div class="uk-background-cover modal_pic" style="background-image: url('/img/projet/myirc.png');" uk-height-viewport></div>
+                            <div class="uk-padding-large">
+                                <h1>My IRC</h1>
+                                <p>
+                                    Le but de ce projet était de de realiser un chat instantanée en NodeJS avec une base de données orientée document faite avec
+                                    MongoDB, mais aussi le site devait utiliser Socket.IO pour l'envoi de msg en instantané.
+                                    L'utilisateur devait se connecter si il voulait avoir accès à la création de channel,
+                                    l'administration d'autre channel mais aussi pour avoir la possibilité d'envoyer des messages
+                                    privés aux autres utilisateurs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-hover uk-card-secondary uk-card-body cardy">
+            <div class="front">
+                <h4 class="uk-card-title">Laravel</h4>
+                <img src="/img/LaravelLogo.png" alt="Laravel logo" class="tech_logo">
+            </div>
+            <div class="back">
+                <h5>My ADS</h5>
+                <p>Projet réalisé dans le cadre de ma formation, un site de petites annonces entre particulier</p>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-hover uk-card-secondary uk-card-body cardy">
+            <div class="front">
+                <h4 class="uk-card-title">Symfony</h4>
+                <img src="/img/symfony.svg" alt="NodeJS logo" class="tech_logo">
+            </div>
+            <div class="back">
+                <h5>Quizr</h5>
+                <p>Projet réalisé dans le cadre de ma formation, un site ou il est possible de poster des quizz et répondre
+                    à des quizz créer par d'autres utilisateurs.
+                </p>
+                <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Apperçu</a>
+
+                <div id="modal-full" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                            <div class="uk-background-cover modal_pic" style="background-image: url('/img/projet/quizr.png');" uk-height-viewport></div>
+                            <div class="uk-padding-large">
+                                <h1>Quizr</h1>
+                                <p>Le but de ce projet était de réaliser un site de partage de quizz répertorier par categories.
+                                    Seuls les utilisateurs inscrits peuvent créer des questionnaires. Il est aussi possible
+                                    que ceux ci soient corriger est une note est attribuée elle est ainsi enregistrée dans
+                                    l'historique des notes. Si l'utilisateur est connecté il est possible qu'il
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-hover uk-card-secondary uk-card-body cardy">
+            <div class="front">
+                <h4 class="uk-card-title">SASS</h4>
+                <img src="/img/sass.png" alt="NodeJS logo" class="tech_logo">
+            </div>
+            <div class="back">
+                <h5>Framework W@C</h5>
+                <p>
+                    Projet réaliser dans le cadre de ma formation, un framework SASS réaliser pour être utilisé pour les projets durant ma formation
+                    qui à évolué avec ceux-ci.
+                </p>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-hover uk-card-secondary uk-card-body cardy">
+            <div class="front">
+                <h4 class="uk-card-title">Wordpress</h4>
+                <img src="/img/wordpress_logo.png" alt="NodeJS logo" class="tech_logo">
+            </div>
+            <div class="back">
+                <h5>Dirt Track Garage</h5>
+                <p>Réalisation d'un site Wordpress pour une entreprise, mise en avant des différents biens vendu par la TPE</p>
+
+
+                <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Apperçu</a>
+
+                <div id="modal-full" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                            <div class="uk-background-cover modal_pic" style="background-image: url('/img/projet/wordpress.png');" uk-height-viewport></div>
+                            <div class="uk-padding-large">
+                                <h1>
+                                    <a href="www.dirt-track-garage.fr">Dirt Track Garage</a>
+                                </h1>
+                                <p>
+                                    Dirt Track Garage est une TPE, qui importe des quads et autres véhicules, il est y possible de réparer nos véhicules. Sur
+                                    place nous pouvons retrouver tout les accessoires et équipements les plus courant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-hover uk-card-secondary uk-card-body cardy">
+            <div class="front">
+                <h4 class="uk-card-title">SQL</h4>
+                <img src="/img/mysql.png" alt="NodeJS logo" class="tech_logo">
+            </div>
+            <div class="back">
+                <p>Utilisation de MySQL pour tous les projets effectuer en PHP durant ma formation.</p>
+            </div>
+        </div>
+
+
+        <div class="uk-card uk-card-hover uk-card-secondary uk-card-body cardy">
+            <div class="front">
+                <h4 class="uk-card-title">Adobe Photoshop</h4>
+                <img src="/img/photoshop.png" alt="NodeJS logo" class="tech_logo">
+            </div>
+            <div class="back">
+                <p>Utilisation d'Adobe Photoshop pour la réalisation des maquettes des différents sites réaliser durant ma formation.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="/js/jquery-3.2.1.js"></script>
+    <script src="/js/popmotion-min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="/js/uikit-icons.js"></script>
+    <script src="/js/uikit.js"></script>
+    <script src="/js/front.js"></script>
 </body>
+
 </html>

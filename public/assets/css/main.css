@@ -1,0 +1,52 @@
+* {
+    font-family: 'Josefin Sans', sans-serif !important;  
+    margin: 0;
+    overflow: visible;
+}
+
+#first_parallax {
+    background-image: url('/img/code_background.jpg');
+    height: 500px;
+}
+
+#first_parallax_content {
+    background-color: rgba(237, 243, 233, 0.9);
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.grey_font {
+    color: grey !important;
+}
+
+#header_text h1 {
+    color: rgb(67, 134, 192) !important;
+}
+
+#skill_container {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+#logo {
+    max-width: 20%;
+}
+
+.cardy {
+    margin-right: 15px;
+    flex: 0 0 450px;
+}
+
+.uk-card-secondary {
+    background-color: #1C1C1C !important;
+}
+
+.tech_logo {
+    max-width: 20%;
+    margin-left: 250px;
+}
+
+.modal_pic {
+    background-size: 89% !important; 
+}
