@@ -2,6 +2,8 @@
 
 var express = require('express');
 var path = require('path');
+var mail = require(path.resolve("controller/Mail"));
+
 
 //_________________ Routes _____________
 
@@ -18,6 +20,10 @@ module.exports = function(routing) {
     })
 
     //________ Entity ___________
+    routing.post("/send_mail", function(req, res, next) {
+        console.log(req.body);
+        res.send(req.body);
+    })
   
 }
 

@@ -34,8 +34,8 @@
             <div class="back">
                 <h5>My IRC</h5>
                 <p>
-                    Projet réalisé dans le cadre de ma formation, un chat instantanée ainsi que système de connexion et différents droits sur
-                    les users.
+                    Projet réalisé dans le cadre de ma formation, un chat instantané ainsi que un système de connexion avec tokens, hiérarchie
+                    user.
                 </p>
 
                 <a class="uk-button uk-button-default" href="#modal-full-1" uk-toggle>Apperçu</a>
@@ -48,11 +48,10 @@
                             <div class="uk-padding-large">
                                 <h1>My IRC</h1>
                                 <p>
-                                    Le but de ce projet était de de realiser un chat instantanée en NodeJS avec une base de données orientée document faite avec
-                                    MongoDB, mais aussi le site devait utiliser Socket.IO pour l'envoi de msg en instantané.
-                                    L'utilisateur devait se connecter si il voulait avoir accès à la création de channel,
-                                    l'administration d'autre channel mais aussi pour avoir la possibilité d'envoyer des messages
-                                    privés aux autres utilisateurs.
+                                    Le but de ce projet était de de réaliser un chat instantané en NodeJS avec une base de données orientée document faite avec
+                                    MongoDB, utilisation Socket.IO pour la messagerie. L'utilisateur doit se connecter si
+                                    il veux avoir accès à la création de channel, l'administration d'autres channels mais
+                                    aussi pour avoir la possibilité d'envoyer des messages privés aux autres utilisateurs.
                                 </p>
                             </div>
                         </div>
@@ -68,7 +67,7 @@
             </div>
             <div class="back">
                 <h5>My ADS</h5>
-                <p>Projet réalisé dans le cadre de ma formation, un site de petites annonces entre particulier</p>
+                <p>Projet réalisé dans le cadre de ma formation, un site de petites annonces entre particuliers</p>
             </div>
         </div>
 
@@ -93,8 +92,9 @@
                                 <h1>Quizr</h1>
                                 <p>Le but de ce projet était de réaliser un site de partage de quizz répertorier par categories.
                                     Seuls les utilisateurs inscrits peuvent créer des questionnaires. Il est aussi possible
-                                    que ceux ci soient corriger est une note est attribuée elle est ainsi enregistrée dans
-                                    l'historique des notes. Si l'utilisateur est connecté il est possible qu'il
+                                    que ceux ci soient corrigé, une note est attribuée. Elle est ainsi enregistrée dans l'historique
+                                    des notes. Si l'utilisateur est connecté il lui est possible de se comparer avec d'autres
+                                    en visitant leur profil.
                                 </p>
                             </div>
                         </div>
@@ -112,8 +112,8 @@
             <div class="back">
                 <h5>Framework W@C</h5>
                 <p>
-                    Projet réaliser dans le cadre de ma formation, un framework SASS réaliser pour être utilisé pour les projets durant ma formation
-                    qui à évolué avec ceux-ci.
+                    Projet réalisé dans le cadre de ma formation, un framework SASS, pour être utilisé pour les projets durant ma formation qui
+                    à évolué tout au long de celle-ci.
                 </p>
             </div>
         </div>
@@ -127,8 +127,8 @@
                 <h5>Dirt Track Garage</h5>
                 <p>Réalisation d'un site Wordpress pour une entreprise, mise en avant des différents biens vendu par la TPE</p>
 
-
                 <a class="uk-button uk-button-default" href="#modal-full-3" uk-toggle>Apperçu</a>
+
 
                 <div id="modal-full-3" class="uk-modal-full" uk-modal>
                     <div class="uk-modal-dialog">
@@ -140,8 +140,8 @@
                                     <a href="http://www.dirt-track-garage.fr">Dirt Track Garage</a>
                                 </h1>
                                 <p>
-                                    Dirt Track Garage est une TPE, qui importe des quads et autres véhicules, il est y possible de réparer nos véhicules. Sur
-                                    place nous pouvons retrouver tout les accessoires et équipements les plus courant.
+                                    Dirt Track Garage est une TPE, important quads et motos, ce garage propose aussi un service de réparation et d'achat de pièces
+                                    détachées, accessoires et autres.
                                 </p>
                             </div>
                         </div>
@@ -183,13 +183,33 @@
                     <h2 class="uk-modal-title">Contact</h2>
                 </div>
                 <div class="uk-modal-body">
-                    <p>Veuillez remplir les champs suivant pour me contacter
-                        <p>
+                    <p>
+                        <center>
+                            Veuillez remplir les champs suivant pour me contacter
+                        </center>
+                    </p>
+                    <form id="contact_form">
+                        <fieldset class="uk-fieldset">
+
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="Votre e-mail" name="email">
+                            </div>
+
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="Sujet" name="email">
+                            </div>
+
+                            <div class="uk-margin">
+                                <textarea class="uk-textarea" name="message" rows="5" placeholder="Contenu"></textarea>
+                            </div>
+
+                        </fieldset>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Annuler</button>
-                    <button class="uk-button uk-button-primary" type="button">Envoyer</button>
+                    <button id="form_send" class="uk-button uk-button-primary" type="button">Envoyer</button>
                 </div>
+                </form>
             </div>
         </div> -->
 
@@ -207,17 +227,16 @@
 
     <div id="start_modal" class="uk-flex-top" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-    
+
             <button class="uk-modal-close-default" type="button" uk-close></button>
-    
+
             <div class="uk-text-center">
                 <h2>Le site est en développement.</h2>
                 <button class="uk-button uk-button-primary uk-modal-close" type="button">Acceder</button>
             </div>
-            
+
         </div>
     </div>
-
     <script src="/js/jquery-3.2.1.js"></script>
     <script src="/js/popmotion-min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>

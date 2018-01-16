@@ -213,6 +213,7 @@
       "resolved": "https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.0.6.tgz",
       "version": "1.0.6"
     },
+    "nodemailer": "^4.4.1",
     "nodemon": "^1.14.11",
     "on-finished": {
       "integrity": "sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=",
