@@ -7,6 +7,8 @@ var mongoose = require('mongoose');
 var server = require('http').createServer(app); 
 var bodyParser = require('body-parser');
 var base64url = require('base64url');
+var port = process.env.PORT || 8888
+
 
 //________________ Global Var ________
 
@@ -45,7 +47,7 @@ app.use('/', routing);
 
 //________________ Functions ___________
 
-server.listen(8888, '0.0.0.0', function() {
+server.listen(port, '0.0.0.0', function() {
     console.log('Anonymous connected');
 }); 
 
