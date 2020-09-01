@@ -16,7 +16,7 @@
       "resolved": "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz",
       "version": "1.1.1"
     },
-    "base64url": "^2.0.0",
+    "base64url": "^3.0.0",
     "body-parser": {
       "integrity": "sha1-h2eKGdhLR9hZuDGZvVm84iKxBFQ=",
       "requires": {
