@@ -188,7 +188,7 @@
       "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.17.tgz",
       "version": "2.1.17"
     },
-    "mongodb": "^3.0.1",
+    "mongodb": "^3.1.13",
     "mongoose": "^4.13.9",
     "ms": {
       "integrity": "sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=",
